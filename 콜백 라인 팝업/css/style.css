@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+body .btnOpen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 20vw;
+  min-width: 200px;
+  height: 60px;
+  font: bold 24px/1 "orbitron";
+  color: #fff;
+  letter-spacing: 3px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+body .btnOpen.on {
+  bottom: 0vh;
+  opacity: 0;
+}
+body aside {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+}
+body aside .top {
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(to right, #20BF55, #01BAEF);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body aside .right {
+  width: 1px;
+  height: 0%;
+  background: linear-gradient(to bottom, #FB7BA2, #FCE043);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body aside .bottom {
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(to left, #A88BEB, #F8CEEC);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body aside .left {
+  width: 1px;
+  height: 0px;
+  background: linear-gradient(to top, #89D4CF, #89D4CF);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body aside .inner {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body aside .inner h1 {
+  font: bold 5vw/1 "orbitron";
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+body aside .inner .btnClose {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+body aside .inner .btnClose span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+body aside .inner .btnClose span:nth-child(1) {
+  top: 0%;
+  transform: rotate(-45deg);
+}
+body aside .inner .btnClose span:nth-child(2) {
+  top: 0%;
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=style.css.map */
